@@ -1,0 +1,141 @@
+import java.util.Scanner;
+
+public class Arbol{
+ public static void main(String args[]){
+
+  String nombre = "";
+  int menu = 0;  
+  Scanner entrada = new Scanner(System.in);
+  Scanner teclado = new Scanner(System.in);
+
+  do{
+  System.out.println("1.-Parientes");
+  System.out.println("2.-Abuelos");
+  System.out.println("3.-Tios");
+  System.out.println("4.-Primos");
+  System.out.println("5.-Salir");
+  System.out.print("Seleccione una opcion: ");
+   menu = entrada.nextInt();
+
+
+   switch(menu){
+
+
+    case 1: System.out.println("                                               **************************");
+            System.out.println("                                               ********Parientes:********");
+            System.out.println("                                               **************************");
+            System.out.println("");
+            System.out.println("                                                                                                                                        ♦Paternos♦                                                                                                                                                                                                                              Maternos                                                                                ");
+            System.out.println(""); 
+            System.out.println("                                                                                                                    (Arturo_Anaya_Contreras  y  Rogelia_Godinez_Cruz)                                                                                                                                                                                    (Jose_Soto_Chavez   y  Maria_de_la_Luz_Soto:Zuñiga)                                                            ");
+            System.out.println("                                                                                                                                             |                                                                                                                                                                                                                                                                                                                          ");
+            System.out.println("                                                                                                                                             |                                                                                                                                                                                                                                                                                                                          ");
+            System.out.println("                 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                    -------------------------------------------------------------------------------------------------------------                               ");
+            System.out.println("                 |                                                               |                                                                                               |                                                                                     |                                                    |                                              |                                                            |                               ");
+            System.out.println("        (Rosa_Anaya_Godinez)                                           (Carmen_Anaya_Godinez)                                                                           (Elia_Anaya_Godinez)                                                                 (Arturo_Anaya_Godinez)                       (Elizabeth_Angelica_Soto_Zuñiga)                     (Rocia_Lorena_Soto_Zuñiga)                                  (Miguel_Angel_Soto_Zuñiga)                   ");
+            System.out.println("                 |                                                               |                                                                                               |                                                                                     |                                                    |                                              |                                                            |                               ");
+            System.out.println("         --------------------------                      -------------------------------------------------                        ----------------------------------------------------------------------------------------                                             |                                                    |                            ---------------------------------------                 ---------------------------------------------          ");
+            System.out.println("         |                        |                      |                       |                       |                        |                              |                           |                           |                                             |                                                    |                            |                   |                 |                 |                      |                    |          ");
+            System.out.println("(Licet_Miranda_Anaya) (Lizbeth_Miranda_Anaya)   (Raul_Elizalde_Anaya)  (Anayeli_Elizalde_Anaya) (Anaid_Elizalde_Anaya)   (Nancy_Hernandez_Anaya) (Ricardo_Arturo_Hernandez_Anaya) (Luis_Antonio_Hernandez_Anaya) (Itel_Hernandez_Anaya)                                |                                                    |                   (Abigail_Luna_Soto) (Edgar_Luna_Soto) (Rafael_Luna_Soto) (Daniel_Soto_Vazques) (Elmer_Soto_Vazques) (Arely_Soto_Vazques)");
+            System.out.println("                                                                                                                                                                                                                                                                       |                                                    |                                                                                                                                           ");
+            System.out.println("                                                                                                                                                                                                                                                                       ------------------------------------------------------                                                                                                                                           ");
+            System.out.println("                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                   ");
+            System.out.println("                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                   ");
+            System.out.println("                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                   ");
+            System.out.println("                                                                                                                                                                                                                                                                   ----------------------------------------------------------------                                                                                                                                     ");
+            System.out.println("                                                                                                                                                                                                                                                                   |                  |                      |                    |                                                                                                                                     ");
+            System.out.println("                                                                                                                                                                                                                                                         (Viridiana_Anaya_Soto) (Arturo_Anaya_Soto) (Antonio_Anaya_soto) (Alberto_Anaya_soto)                                                                                                                           ");
+            System.out.println("");
+            break;
+
+    case 2: System.out.println("Que Abuelo desea ver: ");
+            nombre = teclado.nextLine();
+            if(nombre.equalsIgnoreCase("Jose Soto Chavez")){
+               System.out.println("Abuelo Materno: Jose Soto Chavez, edad: 55 ");
+               System.out.println("");
+               } if(nombre.equalsIgnoreCase("Maria de la Luz Soto Zuñiga")){
+                 System.out.println("Abuela Materno: Maria de la luz Soto Zuñiga, edad: 00");
+                 System.out.println("");
+                 } if(nombre.equalsIgnoreCase("Arturo Anaya Contreras")){
+                   System.out.println("Jose Soto Chavez edad: 55 ");
+                   System.out.println("");
+                   } if(nombre.equalsIgnoreCase("Rogelia Godinez Cruz")){
+                     System.out.println("Rogelia Godinez Cruz edad: 55 ");
+                     System.out.println("");
+                     } else{
+                       System.out.println("Pariente no encontrado");
+                       System.out.println("");
+                       }
+            System.out.println("");
+            break;
+
+    case 3: System.out.println("Que tio desea ver: ");
+            nombre = teclado.nextLine();
+            if(nombre.equalsIgnoreCase("Rosa Anaya Godinez")){
+               System.out.println("Rosa Anaya Godinez, edad: 55 ");
+               System.out.println("");
+               } if(nombre.equalsIgnoreCase("Carmen Anaya Godinez")){
+                 System.out.println("Carmen Anaya Godinez, edad: 00");
+                 System.out.println("");
+                 } if(nombre.equalsIgnoreCase("Elia Anaya Godinez")){
+                   System.out.println("Elia Anaya Godinez, edad: 55 ");
+                   System.out.println("");
+                   } if(nombre.equalsIgnoreCase("Rocio Lorena Soto Zuñiga")){
+                     System.out.println("Rocio Lorena Soto Zuñiga, edad: 55 ");
+                     System.out.println("");
+                     } if(nombre.equalsIgnoreCase("Miguel Angel Soto Zuñiga")){
+                       System.out.println("Rocio Lorena Soto Zuñiga, edad: 55 ");
+                       System.out.println("");
+                       } else{
+                         System.out.println("Pariente no encontrado");
+                         System.out.println("");
+                         }
+            System.out.println("");
+            break;
+
+    case 4: System.out.println("Que Primo desea ver: ");
+            nombre = teclado.nextLine();
+            if(nombre.equalsIgnoreCase("Anayeli Elizalde Anaya")){
+               System.out.println("Anayeli Elizalde Anaya, edad: 55 ");
+               System.out.println("");
+               } if(nombre.equalsIgnoreCase("Anaid Elizalde Anaya")){
+                 System.out.println("Anaid Elizalde Anaya, edad: 00");
+                 System.out.println("");
+                 } if(nombre.equalsIgnoreCase("Raul Elizalde Anaya")){
+                   System.out.println("Raul Elizalde Anaya, edad: 55 ");
+                   System.out.println("");
+                   } if(nombre.equalsIgnoreCase("Liceth Miranda Anaya")){
+                     System.out.println("Liceth Miranda Anaya, edad: 55 ");
+                     System.out.println("");
+                     } if(nombre.equalsIgnoreCase("Lizbeth Miranda Anaya")){
+                       System.out.println("Lizbeth Miranda Anaya, edad: 55 ");
+                       System.out.println("");
+                       } if(nombre.equalsIgnoreCase("Nancy Hernandez Anaya")){
+                         System.out.println("Nancy Hernandez Anaya, edad: 55 ");
+                         System.out.println("");
+                         } if(nombre.equalsIgnoreCase("Ricardo Hernandez Anaya")){
+                           System.out.println("Ricardo Hernandez Anaya, edad: 00");
+                           System.out.println("");
+                           } if(nombre.equalsIgnoreCase("Luis Hernandez Anaya")){
+                             System.out.println("Luis Hernandez Anaya, edad: 55 ");
+                             System.out.println("");
+                             } if(nombre.equalsIgnoreCase("Itzel Hernandez Anaya")){
+                               System.out.println("Itzel Hernandez Anaya, edad: 55 ");
+                               System.out.println("");
+                               } else{
+                                 System.out.println("Pariente no encontrado");
+                                 System.out.println("");
+                                 }
+            System.out.println("");
+            break;
+
+
+
+}
+
+    }while(menu != 5);  
+     System.out.println("Hasta luego");
+    
+
+ }
+}
